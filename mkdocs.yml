@@ -1,0 +1,123 @@
+# Project Information
+site_name: Girls Band Compiler Tutorials
+site_description: Girls Band Compiler Tutorials 是一个编程语言设计与实现 (PLDI) 知识整合站点，提供有趣又实用的 PLDI 知识以及其他有帮助的内容，帮助广大 PLDI 爱好者更快更深入地学习 PLDI 知识
+site_author: GBC Tutorials Team
+site_url: https://gbc.xq.gl/
+repo_name: 'GirlsBandCompiler/Tutorials'
+repo_url: 'https://github.com/GirlsBandCompiler/Tutorials'
+copyright: 'Brought to you by GBC Tutorials Team. Available freely under the MIT license.'
+
+# Theme
+theme:
+  name: 'material'
+  language: 'zh'
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: octicons/mark-github-16
+  features:
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+
+plugins: []
+
+# Customization
+extra:
+  social:
+    - icon: octicons/globe-16
+      link: https://xq.gl/
+    - icon: octicons/mark-github-16
+      link: https://github.com/GirlsBandCompiler/
+  copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a>'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - footnotes
+  - markdown.extensions.def_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.extra
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/man.md
+        - includes/authors.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+
+# Contents
+nav:
+  - 简介:
+    - Getting Started: index.md
+    - 关于本项目: intro/about.md
+    - 如何参与: intro/htc.md
+    - 致谢: intro/thanks.md
+  - 编程语言实现基础 教程:
+    - 简介: simpletutor/index.md
+    - 配套 Lab 作业: simpletutor/labs.md
+    - 从解析代码开始:
+        - 语法的规范表述 EBNF: simpletutor/ebnf.md
+        - ANTLR: simpletutor/antlr.md
+  - 编译器/解释器/语言虚拟机:
+    - 简介: compiler/index.md
+    - 前端:
+      - 编译器前端概述: compiler/frontend.md
+    - 中端:
+      - 编译器中端概述: compiler/midend.md
+    - 后端:
+      - 编译器后端概述: compiler/backend.md
+    - 其他话题:
+      - TOSCA: compiler/tosca.md
+      - 栈机与寄存器机: compiler/stack-and-register.md
+  - 运行时支持:
+    - 运行时支持简介: runtime/index.md
+    - 内存管理技术: 
+      - 内存管理技术简介: runtime/memory/index.md
+      - 内存分配器: runtime/memory/allocator.md
+      - 引用计数: runtime/memory/rc.md
+      - 垃圾回收:
+        - 垃圾回收简介: runtime/memory/gc/index.md
+        - 常用垃圾回收算法: runtime/memory/gc/basic.md
+        - 分代垃圾回收: runtime/memory/gc/generational.md
+        - 并行垃圾回收: runtime/memory/gc/concurrent.md
+    - 即时编译技术:
+      - 即时编译技术简介: runtime/jit/index.md
+      - Method-based & Trace-based JIT: runtime/jit/method-trace.md
+#  - 程序综合: # 我真的有一天能学会并且写教程吗？
+#    - 简介: synthesis/index.md
+#    - SyGuS: synthesis/sygus.md
