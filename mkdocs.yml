@@ -11,8 +11,8 @@ copyright: 'Brought to you by GBC Tutorials Team. Available freely under the MIT
 theme:
   name: 'material'
   language: 'zh'
-  logo: assets/logo.png
-  favicon: assets/favicon.png
+#  logo: logo.png
+#  favicon: favicon.png
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -31,8 +31,6 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-  icon:
-    repo: octicons/mark-github-16
   features:
     - content.code.copy
     - content.tooltips
@@ -84,6 +82,7 @@ markdown_extensions:
 nav:
   - 简介:
     - Getting Started: index.md
+    - 推荐的书单: intro/recommended-book.md
     - 关于本项目: intro/about.md
     - 如何参与: intro/htc.md
     - 致谢: intro/thanks.md
