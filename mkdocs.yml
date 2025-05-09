@@ -83,40 +83,40 @@ nav:
   - 简介:
     - Getting Started: index.md
     - 推荐的书单: intro/recommended-book.md
-    - 关于本项目: intro/about.md
-    - 如何参与: intro/htc.md
-    - 致谢: intro/thanks.md
-  - 编程语言实现基础 教程:
-    - 简介: simpletutor/index.md
-    - 配套 Lab 作业: simpletutor/labs.md
-    - 从解析代码开始:
-        - 语法的规范表述 EBNF: simpletutor/ebnf.md
-        - ANTLR: simpletutor/antlr.md
-  - 编译器/解释器/语言虚拟机:
-    - 简介: compiler/index.md
-    - 前端:
-      - 编译器前端概述: compiler/frontend.md
-    - 中端:
-      - 编译器中端概述: compiler/midend.md
-    - 后端:
-      - 编译器后端概述: compiler/backend.md
-    - 其他话题:
-      - TOSCA: compiler/tosca.md
-      - 栈机与寄存器机: compiler/stack-and-register.md
-  - 运行时支持:
-    - 运行时支持简介: runtime/index.md
-    - 内存管理技术: 
-      - 内存管理技术简介: runtime/memory/index.md
-      - 内存分配器: runtime/memory/allocator.md
-      - 引用计数: runtime/memory/rc.md
-      - 垃圾回收:
-        - 垃圾回收简介: runtime/memory/gc/index.md
-        - 常用垃圾回收算法: runtime/memory/gc/basic.md
-        - 分代垃圾回收: runtime/memory/gc/generational.md
-        - 并行垃圾回收: runtime/memory/gc/concurrent.md
-    - 即时编译技术:
-      - 即时编译技术简介: runtime/jit/index.md
-      - Method-based & Trace-based JIT: runtime/jit/method-trace.md
+#    - 关于本项目: intro/about.md
+#    - 如何参与: intro/htc.md
+#    - 致谢: intro/thanks.md
+#  - 编程语言实现基础 教程:
+#    - 简介: simpletutor/index.md
+#    - 配套 Lab 作业: simpletutor/labs.md
+#    - 从解析代码开始:
+#        - 语法的规范表述 EBNF: simpletutor/ebnf.md
+#        - ANTLR: simpletutor/antlr.md
+#  - 编译器/解释器/语言虚拟机:
+#    - 简介: compiler/index.md
+#    - 前端:
+#      - 编译器前端概述: compiler/frontend.md
+#    - 中端:
+#      - 编译器中端概述: compiler/midend.md
+#    - 后端:
+#      - 编译器后端概述: compiler/backend.md
+#    - 其他话题:
+#      - TOSCA: compiler/tosca.md
+#      - 栈机与寄存器机: compiler/stack-and-register.md
+#  - 运行时支持:
+#    - 运行时支持简介: runtime/index.md
+#    - 内存管理技术: 
+#      - 内存管理技术简介: runtime/memory/index.md
+#      - 内存分配器: runtime/memory/allocator.md
+#      - 引用计数: runtime/memory/rc.md
+#      - 垃圾回收:
+#        - 垃圾回收简介: runtime/memory/gc/index.md
+#        - 常用垃圾回收算法: runtime/memory/gc/basic.md
+#        - 分代垃圾回收: runtime/memory/gc/generational.md
+#        - 并行垃圾回收: runtime/memory/gc/concurrent.md
+#    - 即时编译技术:
+#      - 即时编译技术简介: runtime/jit/index.md
+#      - Method-based & Trace-based JIT: runtime/jit/method-trace.md
 #  - 程序综合: # 我真的有一天能学会并且写教程吗？
 #    - 简介: synthesis/index.md
 #    - SyGuS: synthesis/sygus.md
