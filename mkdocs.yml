@@ -86,9 +86,9 @@ nav:
 #    - 关于本项目: intro/about.md
 #    - 如何参与: intro/htc.md
 #    - 致谢: intro/thanks.md
-#  - 编程语言实现基础 教程:
-#    - 简介: simpletutor/index.md
-#    - 配套 Lab 作业: simpletutor/labs.md
+  - 简明编译器实现教程:
+    - 简介: simpletutor/index.md
+    - 编译器结构概览: simpletutor/intro.md
 #    - 从解析代码开始:
 #        - 语法的规范表述 EBNF: simpletutor/ebnf.md
 #        - ANTLR: simpletutor/antlr.md
