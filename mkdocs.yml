@@ -77,6 +77,16 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascript/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 # Contents
 nav:
@@ -89,6 +99,10 @@ nav:
   - 简明编译器实现教程:
     - 简介: simpletutor/index.md
     - 编译器结构概览: simpletutor/intro.md
+  - SMT求解器:
+    - 命题逻辑: logic/logic-intro.md
+    - SAT求解器: logic/sat.md
+    - QF_BV理论: logic/qf-bv.md
 #    - 从解析代码开始:
 #        - 语法的规范表述 EBNF: simpletutor/ebnf.md
 #        - ANTLR: simpletutor/antlr.md
