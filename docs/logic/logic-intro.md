@@ -112,3 +112,7 @@ $$
 1. 删除永真式;
 2. 执行单元传播;
 3. 分类讨论, 递归执行 DPLL.
+
+
+
+**我是 [AdUhTkJm](https://github.com/AdUhTkJm). 文中如有错漏, 请在 [Issues](https://github.com/GirlsBandCompiler/Tutorials/issues) 中指出.**
