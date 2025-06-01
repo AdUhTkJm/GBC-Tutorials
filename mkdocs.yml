@@ -103,6 +103,12 @@ nav:
     - 命题逻辑: logic/logic-intro.md
     - SAT 求解器: logic/sat.md
 #    - QF_BV 理论: logic/qf-bv.md
+#    - CEGIS: logic/cegis.md
+  - 多面体优化:
+    - 数学基础:
+      - 单纯形法: polyhedral/maths/simplex.md
+    - 程序分析:
+      - 依赖计算: polyhedral/analysis/dependency.md
 
 #    - 从解析代码开始:
 #        - 语法的规范表述 EBNF: simpletutor/ebnf.md
