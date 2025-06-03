@@ -81,12 +81,8 @@ markdown_extensions:
       generic: true
 
 extra_javascript:
-  - javascript/katex.js
-  - https://unpkg.com/katex@0/dist/katex.min.js
-  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
-
-extra_css:
-  - https://unpkg.com/katex@0/dist/katex.min.css
+  - javascript/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 # Contents
 nav:
@@ -107,6 +103,8 @@ nav:
   - 多面体优化:
     - 数学基础:
       - 单纯形法: polyhedral/maths/simplex.md
+      - 多面体: polyhedral/maths/polyhedron.md
+      - Barvinok 算法: polyhedral/maths/barvinok.md
     - 程序分析:
       - 依赖计算: polyhedral/analysis/dependency.md
 
