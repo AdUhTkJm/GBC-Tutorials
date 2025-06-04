@@ -1,5 +1,8 @@
 window.MathJax = {
   tex: {
+    packages: {
+      "[+]": ['base', 'stmaryrd']
+    },
     inlineMath: [["\\(", "\\)"]],
     displayMath: [["\\[", "\\]"]],
     processEscapes: true,

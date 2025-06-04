@@ -95,6 +95,8 @@ nav:
   - 简明编译器实现教程:
     - 简介: simpletutor/index.md
     - 编译器结构概览: simpletutor/intro.md
+  - 指称语义:
+    - 简介: denotational/intro.md
   - SMT 求解器:
     - 命题逻辑: logic/logic-intro.md
     - SAT 求解器: logic/sat.md
