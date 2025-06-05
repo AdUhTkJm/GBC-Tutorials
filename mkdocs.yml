@@ -97,6 +97,7 @@ nav:
     - 编译器结构概览: simpletutor/intro.md
   - 指称语义:
     - 简介: denotational/intro.md
+    - Kleene 定理: denotational/kleene.md
   - SMT 求解器:
     - 命题逻辑: logic/logic-intro.md
     - SAT 求解器: logic/sat.md
@@ -108,6 +109,8 @@ nav:
       - 对偶单纯形法: polyhedral/maths/dual-simplex.md
       - 多面体: polyhedral/maths/polyhedron.md
       - Barvinok 算法: polyhedral/maths/barvinok.md
+    - Presburger 算术:
+      - 简介: polyhedral/presburger/intro.md
     - 程序分析:
       - 依赖计算: polyhedral/analysis/dependency.md
 

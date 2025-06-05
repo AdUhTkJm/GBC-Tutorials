@@ -100,8 +100,11 @@ $$
 
 为了解决这些问题, 我们需要引入**偏序域理论** (*domain theory*). Wikipedia 将其称作**域理论**, 但它容易和**域论** (*field theory*) 混淆, 所以我不准备采用这个翻译. 我们要研究的**偏序域** (*domain*) 不是域 (*field*).
 
+接下来, 我们介绍一些基础的定义. 至于它们具体的应用, 请见下一节 [Kleene 定理](./kleene.md).
+
 ## 偏序
 
+<a name="def-1"></a>
 **定义 1.** 一个集合 $D$ 上的**偏序** (*partial order*) $\sqsubseteq$ 是满足如下性质的二元关系:
 
 - 自反性: $\forall a\in D, a\sqsubseteq a$.
@@ -124,4 +127,18 @@ $$
 
 这和实数上的单调函数定义是类似的.
 
+**定义 3.** 如果 $d\in D$ 满足 $\forall s\in D, d\sqsubseteq s$, 那么 $d$ 是 $D$ 中的**最小元** (*minimum*). 我们会把 $d$ 记作 $\bot_{D}$, 或者直接写作 $\bot$.
 
+最小元不一定存在; 正实数集在通常的"小于"下就没有最小元. 但如果最小元存在, 那么它是唯一的: 设 $d, d'$ 是最小元, 我们知道 $d\sqsubseteq d'$ 而且 $d'\sqsubseteq d$, 而根据偏序的[反对称性](#def-1), $d' = d$.
+
+## 不动点
+
+**定义 4.** 对于函数 $f: D\to D$, 如果 $d\in D$ 满足 $f(d) = d$, 那么 $d$ 是 $f$ 的**不动点** (*fixed point*).
+
+这和我们高中所学到的不动点的定义是一致的.
+
+**定义 5.** 对于函数 $f: D\to D$, 如果 $d\in D$ 满足 $f(d)\sqsubseteq D$, 那么 $d$ 是 $f$ 的**预不动点** (*pre-fixed point*). 最小的预不动点被写作 $\mathrm{fix}(f)$; 换句话说, $\forall d\in D, f(d)\sqsubseteq d \rightarrow \mathrm{fix}(f)\subseteq d$.
+
+显然, 与 $D$ 中的最小元一样, 最小预不动点如果存在, 必然是唯一的.
+
+**我是 [AdUhTkJm](https://github.com/AdUhTkJm). 文中如有错漏, 请在 [Issues](https://github.com/GirlsBandCompiler/Tutorials/issues) 中指出.**
