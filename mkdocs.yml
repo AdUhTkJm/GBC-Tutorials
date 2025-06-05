@@ -105,6 +105,7 @@ nav:
   - 多面体优化:
     - 数学基础:
       - 单纯形法: polyhedral/maths/simplex.md
+      - 对偶单纯形法: polyhedral/maths/dual-simplex.md
       - 多面体: polyhedral/maths/polyhedron.md
       - Barvinok 算法: polyhedral/maths/barvinok.md
     - 程序分析:
