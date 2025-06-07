@@ -24,7 +24,7 @@
 
 设 $\mathbf{x}, \mathbf{y}$ 在可行域中, 依照[定义 1](#def-1), 我们有 $A\mathbf{x} = \mathbf{b}$, 同时 $A\mathbf{y} = \mathbf{b}$. 这意味着 $\forall \lambda\in [0, 1], A(\lambda \mathbf{x} + (1-\lambda) \mathbf{y}) = \mathbf{b}$. 因此, 所有 $x$, $y$ 的凸组合 $\lambda \mathbf{x} + (1-\lambda) \mathbf{y}$ 都在可行域中. 根据[定义 2](#def-2), 可行域是凸集.
 
-**定义 3.** 凸集中, 无法用两点的凸组合表示的点是**顶点**.
+**定义 3.** 凸集中, 无法用两个不同点的凸组合表示的点是**顶点**.
 
 我们直观意义上理解的"顶点", 确实是不可能在凸集中另外两个点的连线上的. 这个定义只是将"顶点"严格化了.
 

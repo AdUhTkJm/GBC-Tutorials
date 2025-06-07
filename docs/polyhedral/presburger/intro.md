@@ -52,8 +52,6 @@ FPL 能够求解的内容包括:
 
 虽然 FPL 中未实现, 但 [Barvinok 算法](../maths/barvinok.md)可以计算 presburger 集合中元素的个数.
 
-对于比较复杂的运算, 请移步本站的其他文章. 在这篇文章里, 我们只介绍最简单的两种运算: 并和交, 来熟悉一下 presburger 集合.
-
 ## 简单的运算: 并和交
 
 并集是十分显然的. Presburger 集合本身就是许多基本集的并, 我们只需要把它们合在一起就好了.
@@ -81,5 +79,15 @@ $$
 $$
 
 这就是在 FPL 内部存储约束条件的矩阵内, 加入了一些为零的行而已.
+
+## 存在变量消除
+
+在 FPL 中, 每个基本集都允许一些变量被"存在"量词 $\exists$ 所限定, 但它们会让许多操作变得更加复杂: 例如, 判断基本集 $\{x\mid \exists y, y > 0 \land 2y\leq x\leq y+1\}$ 是否为空, 就需要判断是否存在这样的 $y$, 而这 (一般而言) 并不显然.
+
+显然, Fourier-Motzkin 消元法可以帮助我们做到这一点: 我们可以消去所有其他变量, 只留下对 $y$ 的约束, 然后只需要解线性不等式组就可以了. 然而, 最坏情况下每消去一个变量都会让总的不等式数目变为平方级别, 所以它总体是指数级的. 我们需要更高效的算法.
+
+假设我们要消除 $\exists x\in \mathbb{Z}^n, Ax + By\leq c$ 中的 $x$. 我们实际上是在问: 什么样的 $y$ 可以使得 $\{x\mid By\leq c-Ax\}$ 不是空集? 换句话说, 我们希望线性约束 $By\leq c-Ax$ 在 $y$ 作为参数的情况下有可行解.
+
+在这种情况下, 我们可以直接使用[带参数的单纯形法](../maths/simplex-extended.md)来解决这个问题.
 
 **我是 [AdUhTkJm](https://github.com/AdUhTkJm). 文中如有错漏, 请在 [Issues](https://github.com/GirlsBandCompiler/Tutorials/issues) 中指出.**
