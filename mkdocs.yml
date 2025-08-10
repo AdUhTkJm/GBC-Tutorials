@@ -95,6 +95,9 @@ nav:
   - 简明编译器实现教程:
     - 简介: simpletutor/index.md
     - 编译器结构概览: simpletutor/intro.md
+  - JIT 编译器 & 运行时动态自适应优化:
+    - 简介: jit/intro.md
+    - brainfuck-jit: jit/brainfuck-jit.md
   - 指称语义:
     - 简介: denotational/intro.md
     - Kleene 定理: denotational/kleene.md
