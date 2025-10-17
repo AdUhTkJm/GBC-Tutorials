@@ -116,7 +116,7 @@ nav:
     - Presburger 算术:
       - 简介: polyhedral/presburger/intro.md
     - 程序分析:
-      - 依赖计算: polyhedral/analysis/dependency.md
+      - Pluto 算法: polyhedral/analysis/pluto.md
 
 #    - 从解析代码开始:
 #        - 语法的规范表述 EBNF: simpletutor/ebnf.md
